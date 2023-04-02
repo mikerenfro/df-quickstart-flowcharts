@@ -1,0 +1,141 @@
+digraph df_flowchart {
+    rankdir=TB;
+    node [fontname="Arial", colorscheme=paired12, shape=rect];
+    edge [colorscheme=paired12, fontname="Arial"];
+
+    // Items
+    legend_item [label="Item", tooltip="Item"];
+    barrel [label=<Wooden<br/>barrels>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Brewing", tooltip="Wooden barrels"];
+    cut_gems [label=<Cut<br/>gems>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Producing_for_export", tooltip="Cut gems"]
+    beds [label="Beds", tooltip="Beds"];
+    seating [label=<Chairs or<br/>thrones>, tooltip="Chairs or thronss"];
+    tables [label="Tables", tooltip="Tables"];
+    other_furniture [label=<Other furniture<br/>for bedrooms<br/>or trade>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Furniture", tooltip="Other furniture for bedrooms or trade"];
+    wooden_bins [label=<Wooden<br/>bins>, tooltip="Wooden bins"];
+
+    // Notes
+    node [style=filled];
+    world_generation [label=<World<br/>Generation>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#World_Generation", tooltip="World generation"];
+    embark [label=Embark, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Embark", tooltip="Embark"];
+    assign_detail_mining [label=<Assign 2-3 dwarves to<br/>mining work detail>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Additional_miners", tooltip="Assign 2-3 dwarves to mining work detail"];
+    assign_detail_woodcutting [label=<Assign 1-3 dwarves to<br/>woodcutting work detail>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Woodcutting", tooltip="Assign 1-3 dwarfs to woodcutting work detail"];
+    assign_admins [label=<Assign<br/>administrators>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Nobles_and_Administrators", tooltip="Assign administrators"];
+    note_general_stockpile [label=<Dwarves with hauling labor<br/>should start hauling items<br/>from wagon to stockpile>, tooltip="Dwarves with hauling labor should start hauling items from wagon to stockpile"];
+    note_food_stockpile [label=<Check&nbsp;<font face="consolas"><b>y</b></font>&nbsp; menu, Kitchen tab<br/>to forbid plants and<br/>alcohol from cooking>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Check y menu, Kitchen tab to forbid plants and alcohol from cooking"];
+
+    // Player goal
+    node [style=filled, color=6, fontcolor=white];
+    legend_player_goal [label=<Player<br/>goal>, tooltip="Player goal"];
+    brewing_and_cooking [label=<Brewing and<br/>cooking>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Brewing_and_Cooking", tooltip="Brewing and cooking"];
+    a_minimal_fortress [label=<Start a Minimal<br/>Fortress>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#A_Minimal_Fortress", tooltip="Start a Minimal Fortress"];
+    trade [label=<Trade with<br/>caravans>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Trading", tooltip="Trade with caravans"];
+    stockpiles_with_bins [label=<Stockpiles<br/>with bins>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Storage_Space", tooltip="Stockpiles with bins"]
+    happy_administrators [label=<Happy<br/>administrators>, tooltip="Happy administrators"];
+    finish_minimal_fortress [label=<Complete a Minimal<br/>Fortress>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Beyond_a_Minimal_Fortress", tooltip="Complete a Minimal Fortress"];
+
+    // Designation
+    node [style=filled, color=12, fontcolor=white];
+    legend_designation [label=<Designation>, tooltip="Designattion"];
+    strike_the_earth [label=<Strike<br/>the Earth!>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Strike_The_Earth.21", tooltip="Strike the Earth!"];
+    initial_woodcutting [label=<Cut down<br/>2-5 trees>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Woodcutting", tooltip="Cut down 2-5 trees"];
+    dig_trade_depot [label=<Dig room for<br/>trade depot>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Delving_Secure_Lodgings", tooltip="Dig room for trade depot"];
+    dig_stairway_room [label=<Dig room for<br/>stairway>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Delving_Secure_Lodgings", tooltip="Dig room for stairway"];
+    dig_general_stockpile [label=<Dig room for<br/>general stockpile>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Delving_Secure_Lodgings", tooltip="Dig room for general stockpile"];
+    dig_stairway [label=<Dig initial<br/>stairway>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Stairways", tooltip="Dig initial stairway"]
+    dig_temporary_meeting_area [label=<Dig temporary<br/>meeting area>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Temporary_Meeting_Area", tooltip="Dig temporary meeting area"];
+    dig_first_farm_plot [label=<Dig<br/>farm plot>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Farming", tooltip="Dig farm plot"];
+    dig_still [label=<Dig room<br/>for still>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Drinks", tooltip="Dig room for still"];
+    dig_first_workshops [label=<Dig room for<br/>four workshops<br/>and stockpiles>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Dig room for four workshops and stockpiles"];
+    dig_dining [label=<Dig dining<br/>area>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Dig dining area"];
+    dig_kitchen_food_storage [label=<Dig kitchen<br/>and food storage>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Dig kitchen and food storage"];
+
+    // Building
+    node [style=filled, color=1, fontcolor=black];
+    legend_building [label=<Building>, tooltip="Building"];
+    trade_depot [label=<Build<br/>trade depot>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Trade_Depot", tooltip="Build trade depot"];
+    first_farm_plot [label=<Build farm plot, plant<br/>plump helmets<br/>year-round>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Farming", tooltip="Build farm plot, plant plump helmets year-round"];
+    still [label=<Build<br/>still>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Drinks", tooltip="Build still"]
+    mechanic [label=<Build Mechanic's<br/>workshop>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Build Mechanic's workshop"];
+    stoneworker [label=<Build Stoneworker's<br/>workshop>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Build Stoneworker's workshop"];
+    carpenter [label=<Build Carpenter's<br/>workshop>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Build Carpenter's workshop"];
+    jeweler [label=<Build Jeweler's<br/>workshop>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Build Jeweler's workshop"];
+    kitchen [label="Build Kitchen", URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Build Kitchen"];
+
+    // Zone
+    node [style=filled, color=7, fontcolor=black];
+    legend_zone [label=<Zone>, tooltip="Zone"];
+    outdoor_pasture [label=<Outdoor pasture<br/>for grazers>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Pasture", tooltip="Outdoor pasture for grazers"];
+    temporary_meeting_area [label=<Temporary<br/>meeting area>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Temporary_Meeting_Area", tooltip="Temporary meeting area"];
+    garbage_dump [label=<"Garbage" dump<br/>for excess stone>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#.22Garbage.22_Dumping", tooltip="\"Garbage\" dump for excess stone"];
+    dormitory_bedrooms [label=<Dormitory<br/>or bedrooms>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Bedrooms", tooltip="Dormitory or bedrooms"];
+    offices [label="Offices", URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Offices_.28Studies.29", tooltip="Offices"];
+    dining [label=<Dining<br/>area>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Dining area"];
+    meeting_hall [label=<Meeting hall<br/>in dining area<br/>(remove temporary<br/>meeting area)>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Meeting_Hall", tooltip="Meeting hall in dining area (remove temporary meeting area)"];
+
+    // Stockpile
+    node [style=filled, color=11, fontcolor=black];
+    legend_stockpile [label=<Stockpile>, tooltip="Stockpile"];
+    outdoor_woodpile [label=<Outdoor<br/>woodpile>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Building_material", tooltip="Outdoor woodpile"];
+    refuse_pile [label=<Outdoor<br/>refuse>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Refuse", tooltip="Outdoor refuse"];
+    subgraph cluster_general_stockpile {
+        color=grey;
+        general_stockpile [label=<General<br/>stockpile>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Stockpiles", tooltip="General stockpile"];
+        note_general_stockpile;
+    }
+    subgraph cluster_food_stockpile {
+        color=grey;
+        food_stockpile [label=<Food stockpile>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Dining_and_Food_Prep_Area", tooltip="Food stockpile"];
+        note_food_stockpile;
+    }
+    workshop_stockpiles [label=<Stockpiles for<br/>stone, wood, gems>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Workshops", tooltip="Stockpiles for stone, wood, gems"];
+
+    // Noble/administrator
+    node [style=filled, color=10, fontcolor=white];
+    legend_noble_admin [label=<Noble or<br/>administrator>, tooltip="Noble or administrator"];
+    assigned_bookkeeper [label=<Assigned<br/>bookkeeper>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Bookkeeper", tooltip="Assigned bookkeeper"];
+    assigned_broker [label=<Assigned<br/>broker>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Manager_.26_Broker", tooltip="Assigned broker"];
+    assigned_manager [label=<Assigned<br/>manager>, URL="https://dwarffortresswiki.org/index.php/Quickstart_guide#Manager_.26_Broker", tooltip="Assigned manager"];
+
+    // Squad
+    node [style=filled, color=2, fontcolor=white];
+    legend_squad [label=<Military<br/>squads>, tooltip="Military squads"];
+
+    // Legend
+    subgraph cluster_legend {
+        label=<<font face="arial">Legend</font>>;
+        // style=invis;
+        // color=white;
+        color=grey;
+        {rank=same; legend_item; legend_player_goal; legend_designation; legend_building;}
+        legend_item -> legend_zone [style=invis];
+        {rank=same; legend_zone; legend_stockpile; legend_noble_admin; legend_squad;}
+    }
+
+    // Dependency ordering
+    world_generation -> embark -> a_minimal_fortress -> { assign_detail_mining assign_detail_woodcutting assign_admins outdoor_pasture outdoor_woodpile refuse_pile};
+    assign_detail_mining -> strike_the_earth;
+    { outdoor_woodpile assign_detail_woodcutting } -> initial_woodcutting;
+    assign_admins -> { assigned_bookkeeper assigned_broker assigned_manager };
+    strike_the_earth -> dig_trade_depot -> dig_stairway_room -> { dig_general_stockpile dig_stairway };
+    { dig_trade_depot assigned_broker } -> trade_depot;
+    dig_general_stockpile -> general_stockpile;
+    dig_stairway -> dig_temporary_meeting_area -> temporary_meeting_area;
+    general_stockpile -> dig_first_farm_plot -> first_farm_plot;
+    dig_first_farm_plot -> dig_still -> still;
+    dig_stairway -> dig_first_workshops -> { garbage_dump mechanic stoneworker carpenter jeweler workshop_stockpiles };
+    initial_woodcutting -> { carpenter } -> { barrel beds };
+    { still barrel first_farm_plot kitchen food_stockpile } -> brewing_and_cooking;
+    jeweler -> cut_gems;
+    { trade_depot cut_gems other_furniture } -> trade;
+    { dig_stairway beds } -> dormitory_bedrooms;
+    { carpenter stoneworker } -> { tables seating other_furniture };
+    { dormitory_bedrooms seating tables } -> offices;
+    {assigned_manager assigned_bookkeeper offices } -> happy_administrators;
+    dig_stairway -> { dig_dining dig_kitchen_food_storage };
+    { seating tables dig_dining } -> dining;
+    dig_kitchen_food_storage -> { kitchen food_stockpile };
+    { temporary_meeting_area dining } -> meeting_hall;
+    carpenter -> wooden_bins;
+    { wooden_bins workshop_stockpiles general_stockpile } -> stockpiles_with_bins;
+    { meeting_hall brewing_and_cooking stockpiles_with_bins trade happy_administrators } -> finish_minimal_fortress;
+}
